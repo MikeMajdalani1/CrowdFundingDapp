@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Small Crowdfunding App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Small Crowdfunding App repository coded by me! This application allows users to contribute to a crowdfunding campaign using blockchain technology.
 
-## Available Scripts
+This project is perfect for people learning Web3. You can clone it and use it at your own wish.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To get started with this project, follow the steps below:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Deploy the Smart Contract:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   - You will need a local blockchain environment like Ganache or a testnet such as Ropsten.
+   - Deploy the crowdfunding smart contract on your chosen blockchain.
+   - Take note of the contract address after deployment.
 
-### `npm test`
+2. Replace ABI in the Contract Folder:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   - In the `contract` folder, replace the `Crowdfunding.json` file with the ABI (Application Binary Interface) of your deployed smart contract.
+   - The ABI is essential for interaction between the frontend and the smart contract.
 
-### `npm run build`
+3. Update the Contract Address:
+   - In your project's code, look for a constant named `contractAddress`.
+   - Replace the value of `contractAddress` with the actual address of your deployed crowdfunding smart contract.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once you've deployed the contract and updated the ABI and contract address, you can run the crowdfunding app locally or deploy it to a web server. Follow these steps to run the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install Dependencies:
 
-### `npm run eject`
+   - Use npm or yarn to install the project dependencies by running `npm install` or `yarn install` in the project's root directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Start the Application:
+   - Launch the application using `npm start` or `yarn start`.
+   - The app should now be accessible at `http://localhost:3000` (by default).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Contribute to the existing campaign.
+- Track campaign progress and funding goals.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
 
-## Learn More
+If you have any questions or need assistance, feel free to contact me at [mikemajdalani1@gmail.com](mailto:mikemajdalani1@gmail.com).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy crowdfunding!

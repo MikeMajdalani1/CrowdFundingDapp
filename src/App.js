@@ -13,7 +13,7 @@ function App() {
   const [goalReached, setgoalReached] = useState(false);
   const [error, setError] = useState("");
   const [crowdfundingContract, setCrowdfundingContract] = useState(null);
-  const contractAddress = "0x83C402d9b1a45326AC5dE5f63C91cd3ec7e2C42b";
+  const contractAddress = "0x83C402d9b1a45326AC5dE5f63C91cd3ec7e2C42b"; //replace this variable once you deploy the contract, don't forget also to update the ABI file in /contract
 
   //this useEffect fecthes values from the smart contract
   useEffect(() => {
