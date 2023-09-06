@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  padding: 0 50px;
+  margin-top: 80px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 50px;
+}
+.app-header-text {
+  text-align: center;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img-top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+}
+.card-donations {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  margin: 0 auto;
+}
+
+.card-error {
+  color: red;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+input {
+  border: 2px solid #fd6459;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  outline: none;
+}
+input:focus {
+  border-color: #f44336;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button.primary {
+  background-color: #2196f3;
+}
+
+button.secondary {
+  background-color: #4caf50;
+}
+
+button.tertiary {
+  background-color: #ffc107;
+  color: #333;
 }
